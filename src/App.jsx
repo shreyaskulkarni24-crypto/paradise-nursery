@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       {page === "landing" && <LandingPage onNavigate={navigate} />}
-      {page === "products" && <ProductsPage onNavigate={navigate} />}
+      {page === "products" && <Productlist onNavigate={navigate} />}
       {page === "cart" && <CartPage onNavigate={navigate} />}
       {page === "about" && <AboutUs onNavigate={navigate} />}
     </>
