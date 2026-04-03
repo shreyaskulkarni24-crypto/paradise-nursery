@@ -17,16 +17,30 @@ export default function Header({ onNavigate, currentPage }) {
 
       <p className="header-tagline">Bringing Nature Into Your Home</p>
 
-      <button
-        className={`cart-btn ${currentPage === "cart" ? "active" : ""}`}
-        onClick={() => onNavigate("cart")}
-        aria-label={`Shopping cart, ${totalItems} items`}
-      >
-        <span className="cart-icon">🛒</span>
-        {totalItems > 0 && (
-          <span className="cart-badge">{totalItems}</span>
-        )}
-      </button>
+      <nav className="header-nav">
+        <button
+          className={`nav-link ${currentPage === "products" ? "nav-active" : ""}`}
+          onClick={() => onNavigate("products")}
+        >
+          Shop
+        </button>
+        <button
+          className={`nav-link ${currentPage === "about" ? "nav-active" : ""}`}
+          onClick={() => onNavigate("about")}
+        >
+          About Us
+        </button>
+        <button
+          className={`cart-btn ${currentPage === "cart" ? "active" : ""}`}
+          onClick={() => onNavigate("cart")}
+          aria-label={`Shopping cart, ${totalItems} items`}
+        >
+          <span className="cart-icon">🛒</span>
+          {totalItems > 0 && (
+            <span className="cart-badge">{totalItems}</span>
+          )}
+        </button>
+      </nav>
     </header>
   );
 }
