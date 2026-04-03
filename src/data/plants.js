@@ -1,4 +1,4 @@
-import peaceLily from "../assets/images/peace_lily.webp";
+import PeaceLily from "../assets/images/Peace_lily.webp";
 import jasmine from "../assets/images/jasmine.webp";
 
 
@@ -12,7 +12,7 @@ export const plantCategories = [
         id: 1,
         name: "Peace Lily",
         price: 12.99,
-        image: peaceLily,
+        image: PeaceLily,
         description: "Elegant white blooms, thrives in low light and removes toxins from the air effortlessly.",
         category: "air-purifying",
       },
